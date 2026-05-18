@@ -1,17 +1,18 @@
 # bzusdt
 
-BZUSDT strategy workspace for Brent crude oil perpetual trading.
+`BZUSDT` 是跟踪 Brent 原油的 USDT 永续合约。Brent 原油通常被视为更国际化的原油价格基准，适合用于观察全球原油供需、地缘风险和宏观预期变化。
 
-## Target
+## 项目目标
 
-`BZUSDT` tracks Brent crude oil, the more widely used international crude oil benchmark. This repository is intended for strategy research, simulation, and future automation around Brent crude oil price movement.
+这个仓库用于围绕 `BZUSDT` 做原油交易策略研究、回测、模拟和后续自动化交易开发。
 
-## Scope
+## 研究范围
 
-- Build and test Brent crude oil trading strategies.
-- Keep risk controls explicit before any live trading.
-- Separate research, backtesting, configuration, and execution code.
+- 构建和测试 Brent 原油交易策略。
+- 明确止损、仓位、杠杆和回撤控制。
+- 区分研究脚本、回测脚本、配置文件和实盘执行代码。
+- 所有实盘逻辑上线前先经过模拟或干跑验证。
 
-## Risk Notice
+## 风险提示
 
-Commodity-linked perpetual contracts can be highly volatile and may include leverage, funding fees, slippage, and liquidity risk. Any strategy should be tested in dry-run or simulation mode before live use.
+原油类永续合约波动较大，可能受到杠杆、资金费率、滑点、流动性和突发新闻影响。任何策略在实盘运行前，都应先通过回测、模拟盘或 `DRY_RUN` 模式验证。
